@@ -1,0 +1,41 @@
+# Public APIs Explorer Web
+
+> Web UI for searching and exploring free public APIs. Easy to run in Termux. Self-delivered by the persistent-self-coder.
+
+## Purpose
+Explain this as a phone-friendly web list of public APIs, not as a new API itself. Source: fitzyracing1/public-apis-explorer-web.
+
+## How it works (plain English)
+1. Open the web UI.
+2. Search the list of free public APIs.
+3. Run it in Termux if you are on a phone.
+4. The persistent-self-coder shipped the first files.
+
+## Key ideas
+- Public APIs (other people's free endpoints)
+- Web UI (a page, not only a CLI)
+- Termux (phone Linux)
+
+## The actual code
+```
+# source: fitzyracing1/public-apis-explorer-web
+ui = web_page()
+results = search_public_apis(query)
+```
+
+## Line-by-line translation
+1. web_page() → “open the explorer in a browser”
+2. search_public_apis(query) → “find matching free APIs”
+
+## Decisions the program makes
+- If a query matches → show those APIs
+- If none match → show an empty list
+
+## What a person would notice
+A searchable shelf of other people's APIs, runnable on a phone.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the source and run the UI in Termux or a browser.
